@@ -27,12 +27,11 @@ function searchCountries(event) {
         );
         return;
       }
-      clearCountries();
+
       renderCountriesList(countries);
     })
     .catch(error => {
-      console.log(error.message);
-
+      clearCountries();
       switch (error.message) {
         case '404':
           Notify.failure('Oops, there is no country with that name');
