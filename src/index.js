@@ -21,6 +21,7 @@ function searchCountries(event) {
 
   fetchCountries(inputText)
     .then(countries => {
+      clearCountries();
       if (countries.length > 10) {
         Notify.info(
           'Too many matches found. Please enter a more specific name.'
