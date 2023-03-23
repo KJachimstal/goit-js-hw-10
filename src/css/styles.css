@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
-
 * {
   box-sizing: border-box;
 }
@@ -19,22 +17,13 @@ body {
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+
 }
 
-.search__container {
-  font-family: 'Roboto Mono', monospace;
-  margin: 15px;
+#search-box:focus {
+  outline-color: #33c4ff;
 }
 
 .search__title {
   font-size: 30px;
-}
-
-.search__box {
-  width: 450px;
-  padding: 10px;
-}
-
-.search__box:focus {
-  outline-color: #33c4ff;
 }
